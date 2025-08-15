@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('./WubbaLubbaDubDub.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    line-height: 0;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+    overflow-x: hidden;
+    font-family: 'MyFont', sans-serif;
+    background-color: #62FF39;
+}
+::-webkit-scrollbar {
+  display: none; 
+}
+.content {
+    display: inline-block; 
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.content img {
+    width: 100vw;  
+    height: auto;
+    display: block; 
+    z-index: 0;
+}
+
+/* @media (max-width: 768px) {
+    .content img {
+        content: url("mobile-image.png");
+    }
+} */
+
+
+
+.buttons {
+    position: absolute; 
+    top: 73%; 
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+
+.top-buttons{
+    display: flex; 
+    justify-content: center;
+    gap: 10vw;
+}
+.bottom-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 7vw;
+}
+
+
+.top-img{
+    width: 14vw  !important;
+    height: auto !important;
+}
+.bottom-img{
+    width: 28vw  !important;
+    height: auto  !important;
+}
+
+
+.top-left-img:hover{
+    content: url("./images/top-dex-l.png");
+}
+
+.top-right-img:hover{
+    content: url("./images/top-x-l.png");
+}
+
+.bottom-left-img:hover{
+    content: url("./images/bottom-r-l.png");
+}
+
+.bottom-right-img:hover{
+    content: url("./images/bottom-tg-l.png");
+}
+
+.ca-text{
+    margin: 0;
+    line-height: normal;
+    position: absolute; 
+    top: 78.2%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;        
+    white-space: normal;
+    text-align: center;
+    color: #93875d;
+    font-size: 4vw;
+    cursor: pointer;
+}
+.ca-text:hover{
+    color: #fbebb4;
+}
+@media (max-width: 768px) {
+    .ca-text{
+    top: 78.6%; 
+    }
+}
