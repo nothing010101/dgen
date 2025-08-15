@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DGEN</title>
+    <link rel="icon" type="image/x-icon" href="./images/fav.ico">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preload" as="image" href="./images/bottom-r-l.png">
+    <link rel="preload" as="image" href="./images/bottom-tg-l.png">
+    <link rel="preload" as="image" href="./images/top-dex-l.png">
+    <link rel="preload" as="image" href="./images/top-x-l.png">
+</head>
+<body>
+    <div class="content">
+        <img src="./images/back.png" alt="bg">
+
+
+
+
+
+
+
+
+
+
+<!--ca=======================-->
+
+
+
+
+
+
+        <h1 class="ca-text" id="copyText">
+           5pFW6ziMXDg7GSnXYuqjdV96aMqmKxipazdYHQTubonk
+        </h1>
+        <div class="buttons">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--social================-->
+
+
+
+
+
+
+
+            <div class="top-buttons">
+                <a href="https://dexscreener.com/solana/5pFW6ziMXDg7GSnXYuqjdV96aMqmKxipazdYHQTubonk">
+                    <img src="./images/top-dex.png" alt="" class="top-img top-left-img">
+                </a>
+                <a href="https://x.com/DGenZ0ne">
+                    <img src="./images/top-x.png" alt="" class="top-img top-right-img">
+                </a>
+            </div>
+            <div class="bottom-buttons">
+                
+                </a>
+                <a href="https://t.me/DGenZ0ne">
+                    <img src="./images/bottom-tg.png" alt="" class="bottom-img bottom-right-img">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+  const copyEl = document.getElementById("copyText");
+  const originalText = copyEl.textContent;
+
+  copyEl.addEventListener("click", function () {
+    navigator.clipboard.writeText(originalText).then(() => {
+      copyEl.textContent = "Copied!";
+      setTimeout(() => {
+        copyEl.textContent = originalText;
+      }, 1000); 
+    }).catch(err => {
+      console.error("Ошибка копирования:", err);
+    });
+  });
+</script>
+</body>
+</html>
